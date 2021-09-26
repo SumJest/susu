@@ -11,6 +11,6 @@ number = 9.0
 
 # Также посчитайте остаток от предыдущей операции и выведите результат обеих операций в консоль
 
-print("result = " + str(int(number//2)))
+print("result = " + str(int(number // 2)))
 
-print("remainder = " + str(int(number%2)))
+print("remainder = " + str(int(number % 2)))

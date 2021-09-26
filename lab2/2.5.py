@@ -9,18 +9,17 @@ three = 3
 
 #
 
-print(int(two==three))
+print(int(two == three))
 
 #
 
-print(str(two==three))
+print(str(two == three))
 
 """
 В языке Python поддерживается множество операций сравнения( ==, >=, < и т.д.).
 Все подобные операции имеют одинаковый приоритет. Результат сравнения - булева переменная.
 Сравнения могут осуществляться в любом порядке.
 """
-
 
 one = 1
 
@@ -40,4 +39,4 @@ five = 5
 
 six = 6
 
-print(four>four_too, four>=four_too, six<five, six>=five)
+print(four > four_too, four >= four_too, six < five, six >= five)
