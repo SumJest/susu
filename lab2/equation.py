@@ -9,7 +9,7 @@ try:
     elif number == 2:
         print("y = " + str(math.pow(math.e, math.sqrt(x + math.sqrt(x)))))
     elif number == 3:
-        print("y = " + str((x**2 +1) / (3*(x**2 - 1)) + (x**2 - 1) * (1-x)))
+        print("y = " + str((x ** 2 + 1) / (3 * (x ** 2 - 1)) + (x ** 2 - 1) * (1 - x)))
     elif number == 4:
         print("y = " + str(math.sqrt(x + math.sqrt(x + math.sqrt(x)))))
     else:
