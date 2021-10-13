@@ -1,8 +1,11 @@
 recruit_list = {}
 
 for i in range(5):
-    information=input().split(" ")
-    recruit_list["{0} {1} {2}".format(*information[:3])]="{0} {1}".format(*information[3:])
+    information = input().split(" ")  # Считываем строку с информацией и сразу преобразовываем в список
+    # Заполняем массив, где ключ это ФИО, а значение - Год рождения и заболевание
+    # Используем форматирование строк, для восстановления пробелов
+    recruit_list["{0} {1} {2}".format(*information[:3])] = "{0} {1}".format(*information[3:])
+
 print("Фамилия Имя Отчество Год Заболевание")
-for key in recruit_list.keys():
-    print(key + " " + recruit_list[key])
+for key in recruit_list.keys():  # Пробегаемся по ключам словаря
+    print(key + " " + recruit_list[key])  # Выводим пару ключ - значение
