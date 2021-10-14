@@ -1,4 +1,4 @@
-from lab6 import draw_module
+from lab6.modules import draw_module
 
 sides = input().split(" ")
 file = input()
