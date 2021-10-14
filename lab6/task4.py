@@ -1,4 +1,4 @@
-from lab6 import task4_module
+from lab6.modules import task4_module
 from datetime import datetime
 
 output = ""

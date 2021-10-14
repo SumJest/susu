@@ -1,4 +1,4 @@
-from lab6 import task3_module
+from lab6.modules import task3_module
 
 if not task3_module.input_exist():
     print("Файл с входными данными не обнаружен")
