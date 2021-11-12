@@ -2,14 +2,15 @@ from lab6.modules import task3_module
 
 if not task3_module.input_exist():
     print("Файл с входными данными не обнаружен")
-    exit()
+    exit(0)
 
-n = task3_module.read_n()
+count = task3_module.read_n()
 
-prime_numbers = ""
+list_of_integers = list(range(2, count))
 
-for i in range(2, n + 1):
-    if task3_module.is_prime(i):
-        prime_numbers += str(i) + " "
+prime_numbers = task3_module.prime_filter(list_of_integers)
 
-task3_module.write_line(prime_numbers)
+output = " ".join(
+    map(str, prime_numbers))  # преобразовываем числа в списке в строковый формат и заполняем строку элементами
+
+task3_module.write_line(output)  # выводим в файл
