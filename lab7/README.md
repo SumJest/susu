@@ -1,4 +1,4 @@
-# Лабораторная №7
+# Отчет о лабораторной работе №7
 ## Задачи
 Все задачи взяты [отсюда](https://informatics.msk.ru/mod/statements/view.php?id=26736&chapterid=113659 "отсюда") 
 
