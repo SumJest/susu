@@ -87,6 +87,15 @@ class Forum:
             return m_id
         return self.root(message.parent)
 
+    def longer_branch(self, m_id: int = 0, level: int = 0):
+        max_lvl = level
+        for m in self.messages:
+            if m.parent == m_id:
+                lvl = self.longer_branch(m.m_id, level + 1)
+                if lvl > max_lvl:
+                    max_lvl = lvl
+        return max_lvl
+
 
 def from_console() -> Forum:
     """
