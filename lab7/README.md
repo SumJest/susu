@@ -11,6 +11,7 @@
 2. [Форум. Вывести путь](https://github.com/SumJest/susu/tree/master/lab7/task2 "Форум. Вывести путь")
 3. [Форум. Вывести дерево](https://github.com/SumJest/susu/tree/master/lab7/task3 "Форум. Вывести дерево")
 4. [Форум. Номер корня](https://github.com/SumJest/susu/tree/master/lab7/task4 "Форум. Номер корня")
+5. [Форум. Путь между сообщениями](https://github.com/SumJest/susu/tree/master/lab7/task5 "Форум. Путь между сообщениями")
 
 Для удобства проверки можно использовать следующий ввод для инициализации форума:
 
