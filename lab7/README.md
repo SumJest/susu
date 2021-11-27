@@ -10,6 +10,7 @@
 1. [Форум. Удаление ветви](https://github.com/SumJest/susu/tree/b7c49f21be0e3a3c23b41ac64595ead059896cb6/lab7/task1 "Форум. Удаление ветви")
 2. [Форум. Вывести путь](https://github.com/SumJest/susu/tree/b7c49f21be0e3a3c23b41ac64595ead059896cb6/lab7/task2 "Форум. Вывести путь")
 3. [Форум. Вывести дерево](https://github.com/SumJest/susu/tree/b7c49f21be0e3a3c23b41ac64595ead059896cb6/lab7/task3 "Форум. Вывести дерево")
+4. [Форум. Номер корня](https://github.com/SumJest/susu/tree/b7c49f21be0e3a3c23b41ac64595ead059896cb6/lab7/task4 "Форум. Номер корня")
 
 Для удобства проверки можно использовать следующий ввод для инициализации форума:
 

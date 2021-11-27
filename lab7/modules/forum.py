@@ -81,6 +81,12 @@ class Forum:
                 print("**" * level + str(m.m_id))
                 self.tree(m.m_id, level + 1)
 
+    def root(self, m_id: int = 0):
+        message = self.get_message(m_id)
+        if message.parent == 0:
+            return m_id
+        return self.root(message.parent)
+
 
 def from_console() -> Forum:
     """
