@@ -90,3 +90,15 @@ def quick_sort(array: List[int], start, end):
             i, j = i + 1, j - 1
     quick_sort(array, start, j)
     quick_sort(array, i, end)
+
+
+def check(array: List[int]) -> bool:
+    """
+    Function checks if the array is sorted
+    :param array: list of int
+    :return: True - if sorted, False - if not sorted
+    """
+    for i in range(1, len(array)):
+        if array[i - 1] > array[i]:
+            return False
+    return True
