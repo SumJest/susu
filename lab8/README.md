@@ -1,6 +1,7 @@
 # Отчет о лабораторной работе №8
 
 **Вариант:** 3
+
 **Алгоритмы сортировки:**
 1. [Пузырьком](https://github.com/SumJest/susu/blob/master/lab8/sorts.py#L43 "Пузырьком")
 2. [Слиянием](https://github.com/SumJest/susu/blob/master/lab8/sorts.py#L57 "Слиянием")
