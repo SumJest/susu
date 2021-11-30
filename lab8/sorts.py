@@ -78,23 +78,15 @@ def quick_sort(array: List[int], start, end):
     #     start = 0
     # if end is None:
     #     end = len(array) - 1
-    if start >= end:
-        return
-    p = array[random.randint(start,end)]
-    # i = start
-    # j = end
+    if start >= end: return
+    p = array[random.randint(start, end)]
+
     i, j = start, end
     while i <= j:
-        while array[i] < p:
-            i += 1
-        while array[j] > p:
-            j -= 1
+        while array[i] < p: i += 1
+        while array[j] > p: j -= 1
         if i <= j:
-            # swap(array, i, j)
             array[i], array[j] = array[j], array[i]
-            # i += 1
-            # j -= 1
-
             i, j = i + 1, j - 1
     quick_sort(array, start, j)
     quick_sort(array, i, end)

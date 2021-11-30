@@ -2,17 +2,18 @@ from datetime import datetime
 import random
 import sorts
 
-N = 200000
+N = int(input())
 
 array = []
 start = datetime.now().timestamp()
+random.seed(1)
 for i in range(N):
     array.append(random.randint(-N, N))
 filled = datetime.now().timestamp() - start
-print("Filled: " + str(filled))
+print("Filled in: " + str(filled))
 start = datetime.now().timestamp()
 
-# sorts.bubble_sort(array)
+sorts.bubble_sort(array)
 bubble = datetime.now().timestamp() - start
 
 start = datetime.now().timestamp()
