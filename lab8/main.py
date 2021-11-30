@@ -10,7 +10,7 @@ def write(text: str):
     :param text: text str
     :return: None
     """
-    with open("output.txt", "w") as f:
+    with open("lab8/output.txt", "w") as f:
         f.write(text)
         f.close()
 
