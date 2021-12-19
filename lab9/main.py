@@ -1,4 +1,5 @@
 import random
+from datetime import datetime
 from typing import List
 from math import ceil
 from lab9 import sorts, tape_manager as tm
@@ -23,6 +24,8 @@ del my_list
 
 # ----------
 
+start = datetime.now().timestamp()
+
 tapes: List[tm.Tape] = [tm.Tape(f"lab9/arrays/{i}.txt", 'w') for i in range(4)]  # Список из лент
 
 # Заполняем первые две ленты нашим списком
@@ -46,10 +49,12 @@ while True:  # Основной цикл, каждую итерацию этог
     cur2 = tapes[mode * 2 + 1].read()
 
     if not cur1 or not cur2:  # Проверка, если какой из файлов пустой, значит массив отсортирован
+        time = datetime.now().timestamp() - start
         if cur1:
             print(f"Массив отсортирован и находится в {tapes[mode * 2].path}")
         else:
             print(f"Массив отсортирован и находится в {tapes[mode * 2 + 1].path}")
+        print(f"Время сортировки: {time}")
         break
 
     tape_n = ((mode + 1) % 2) * 2  # номер ленты, в которую мы записываем массив в данный момент
