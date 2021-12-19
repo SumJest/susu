@@ -3,9 +3,9 @@ from typing import List
 from math import ceil
 from lab9 import sorts, tape_manager as tm
 
-N = 4500
-M = 20
-P = 4
+N = 45000  # Количество чисел в массиве
+M = 10  # Максимальное количество чисел, которые мы можем держать в памяти
+P = 4  # Количество лент, которые мы будем использовать
 
 # Заполняем список случайными числами
 my_list: List[int] = []
@@ -52,25 +52,30 @@ while True:  # Основной цикл, каждую итерацию этог
             print(f"Массив отсортирован и находится в {tapes[mode * 2 + 1].path}")
         break
 
-    while cur1 or cur2:  # Цикл, каждую итерацию которого мы перескакиваем на следующий блок ленты
+    tape_n = ((mode + 1) % 2) * 2  # номер ленты, в которую мы записываем массив в данный момент
 
-        tape_n = ((mode + 1) % 2) * 2  # номер ленты, в которую мы записываем массив в данный момент
+    while cur1 or cur2:  # Цикл, каждую итерацию которого мы перескакиваем на следующий блок ленты
 
         # Если какая либо из лент закончилась, то мы на ленту tape_n записываем всё оставшиеся числа
         if cur1 == '':
             while cur2:
-                tapes[tape_n].write(cur2 + ' ')
-                cur2 = tapes[mode * 2 + 1].read()
                 if cur2 == "\n":
                     cur2 = tapes[mode * 2 + 1].read()
+                    continue
+                tapes[tape_n].write(cur2 + ' ')
+                cur2 = tapes[mode * 2 + 1].read()
+
             break
 
         elif cur2 == '':
             while cur1:
-                tapes[tape_n].write(cur1 + ' ')
-                cur1 = tapes[mode * 2].read()
+
                 if cur1 == "\n":
                     cur1 = tapes[mode * 2].read()
+                    continue
+                tapes[tape_n].write(cur1 + ' ')
+                cur1 = tapes[mode * 2].read()
+
             break
 
         while cur1 != "\n" or cur2 != "\n":  # Цикл, внутри которого мы бежим по одному блоку ленты

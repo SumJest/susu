@@ -94,7 +94,7 @@ def quick_sort(array: List[int], start, end):
 
 def selection_sort(array: List[int]):
     """
-    unction sorts a list with selection sort algorithm. Function changes the passed list!
+    Function sorts a list with selection sort algorithm. Function changes the passed list!
     :param array:
     :return:
     """
